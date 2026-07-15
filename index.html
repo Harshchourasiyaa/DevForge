@@ -7,48 +7,62 @@
         <meta name="Description" content="DevForge - Student Career Operating System">
         <title>DevForge | Student Career OS</title>
         <link rel="stylesheet" href="css\style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
-        <header>
+        <header class="header">
 
-            <h1>DevForge</h1>
+            <div class="header-content">
 
-            <p>Student Career Operating System</p>
+                <h1 class="logo">DevForge</h1>
+                <p class="tagline">Student Career Operating System</p>
+
+            </div>
 
         </header>
 
-        <nav>
+        <nav class="navbar">
 
-            <a href="index.html">Home</a>
-            <a href="planner.html">Planner</a>
-            <a href="tasks.html">Tasks</a>
-            <a href="notes.html">Notes</a>
-            <a href="interview.html">Interview</a>
-            <a href="weather.html">Weather</a>
-            <a href="timer.html">Pomodoro</a>
-            <a href="github.html">GitHub</a>
-            <a href="contact.html">Contact</a>
+            <a class ="nav-link" href="index.html">Home</a>
+            <a class ="nav-link" href="planner.html">Planner</a>
+            <a class ="nav-link" href="tasks.html">Tasks</a>
+            <a class ="nav-link" href="notes.html">Notes</a>
+            <a class ="nav-link" href="interview.html">Interview</a>
+            <a class ="nav-link" href="weather.html">Weather</a>
+            <a class ="nav-link" href="timer.html">Pomodoro</a>
+            <a class ="nav-link" href="github.html">GitHub</a>
+            <a class ="nav-link" href="contact.html">Contact</a>
 
         </nav>
 
         <main>
 
-            <section>
+            <section class="hero">
 
-                <h2>Welcome to DevForge</h2>
+                <h2 class="hero-title">Welcome to DevForge</h2>
 
-                <p>Organize your learning, track your progress, prepare for interviews and become a better developer - all in one place.</p>
+                <p class="hero-description">Organize your learning, track your progress, prepare for interviews and become a better developer - all in one place.</p>
+
+                <div class="hero-buttons">
+
+                    <a href="planner.html" class="btn">Get Started</a>
+
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                    
+                </div>
 
             </section>
 
             
-            <section>
+            <section class="why-section">
                 
-                <h2>Why DevForge?</h2>
+                <h2 class="section-title">Why DevForge?</h2>
                 
-                <ul>
+                <ul class="why-list">
                     
                     <li>plan your daily study goals</li>
                     <li>manage tasks efficiently</li>
@@ -60,61 +74,95 @@
                 
             </section>
             
-            <section>
+            <section class="features-section">
                 
-                <h2>Features</h2>
-                
-                <article>
+                <h2 class="section-title">Features</h2>
+
+                <div class="features">
+
+                    <article class="feature-card">
                     
-                    <h3>Study Planner</h3>
+                        <h3>Study Planner</h3>
+                        
+                        <p>plan daily and weekly study schedules</p>
+                        
+                    </article>
                     
-                    <p>plan daily and weekly study schedules</p>
+                    <article class="feature-card">
+                        
+                        <h3>Tasks Manager</h3>
+                        
+                        <p>manage important tasks with deadlines</p>
+                        
+                    </article>
                     
-                </article>
-                
-                <article>
+                    <article class="feature-card">
+                        
+                        <h3>Notes</h3>
+                        
+                        <p>save important notes while learning</p>
+                        
+                    </article>
                     
-                    <h3>Tasks Manager</h3>
+                    <article class="feature-card">
+                        
+                        <h3>Github</h3>
+                        
+                        <p>View GitHub profile details using the GitHub API.</p>
+                        
+                    </article>
                     
-                    <p>manage important tasks with deadlines</p>
-                    
-                </article>
-                
-                <article>
-                    
-                    <h3>Notes</h3>
-                    
-                    <p>save important notes while learning</p>
-                    
-                </article>
-                
-                <article>
-                    
-                    <h3>Github</h3>
-                    
-                    <p>View GitHub profile details using the GitHub API.</p>
-                    
-                </article>
-                
-                <article>
-                    
-                    <h3>Weather Widget</h3>
-                    
-                    <p>Check the current weather of any city.</p>
-                    
-                </article>
+                    <article class="feature-card">
+                        
+                        <h3>Weather Widget</h3>
+                        
+                        <p>Check the current weather of any city.</p>
+                        
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3>Pomodoro Timer</h3>
+
+                        <p>
+
+                            Stay productive using focused study sessions.
+
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3>Interview Preparation</h3>
+
+                        <p>
+
+                            Practice DSA, aptitude and interview questions.
+
+                        </p>
+
+                    </article>
+
+                </div>
 
             </section>
             
-            <section>
+            <section class="quote section">
                 
-                <h2>Quote of the Day</h2>
+                <h2 class="section-title">Quote of the Day</h2>
+
+                <blockquote>
+
+                    "Success is the sum of small efforts, repeated day in and day out."
+
+                </blockquote>
                 
             </section>
 
-            <section>
+            <section class="contact-section">
 
-                <h2>Contact</h2>
+                <h2 class="section-title"></h2>
 
                 <p>Have suggestions or feedback? Visit the Contact page to get in touch.</p>
 
@@ -122,9 +170,19 @@
             
         </main>
 
-        <footer>
+        <footer class="footer">
 
-            <p>2026 DevForge | Built by Harsh Chourasiya</p>
+            <p>
+
+                2026 DevForge
+
+            </p>
+
+            <p>
+
+                Built with ❤️ by Harsh Chourasiya
+
+            </p>
 
         </footer>
 
