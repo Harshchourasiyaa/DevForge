@@ -1,160 +1,256 @@
-*{
+/* ==========================================
+   RESET
+========================================== */
 
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
+
+/* ==========================================
+   BODY
+========================================== */
 
 body{
 
-    margin:0;
-    background-color: #f4f6f9;
-    color: #333;
-    font-family:Arial, sans-serif;
-    line-height:1.6;
+    background-color:#f4f6f9;
+    color:#333333;
     font-family:'Poppins',sans-serif;
+    line-height:1.6;
 
 }
+
+/* ==========================================
+   HEADER
+========================================== */
 
 .header{
 
     background:#2563eb;
-    text-align: center;
-    padding:25px;
-    color: white;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+
 }
 
 .logo{
 
     font-size:42px;
+    font-weight:700;
 
 }
 
 .tagline{
 
-    color:white;
-    margin-top: 10px;
+    margin-top:10px;
     font-size:18px;
 
 }
+
+/* ==========================================
+   NAVBAR
+========================================== */
 
 .navbar{
 
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:25px;
-    background:#1e40af;
-    padding:15px;
     flex-wrap:wrap;
+    gap:25px;
+
+    background:#1e40af;
+
+    padding:15px;
 
     position:sticky;
-
     top:0;
-
     z-index:1000;
+
 }
 
 .nav-link{
 
-    color: white;
-    text-decoration: none;
-    /* margin-right: 15px; */
-    font-weight: bold;
-    transition:0.3s;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+
+    transition:
+    color .3s,
+    transform .3s;
 
 }
 
 .nav-link:hover{
-    text-decoration:underline;
+
     color:#ffd60a;
+    transform:translateY(-2px);
+
 }
+
+/* ==========================================
+   HERO SECTION
+========================================== */
 
 .hero{
 
-    background:white;
+    background:#ffffff;
     text-align:center;
-    padding: 80px 20px;
+    padding:90px 20px;
 
 }
 
 .hero-title{
 
+    font-size:48px;
     color:#2563eb;
-    font-size:40px;
     margin-bottom:20px;
 
 }
 
 .hero-description{
 
-    max-width:800px;
-
-    margin:auto;
-
+    max-width:750px;
+    margin:20px auto;
     font-size:18px;
+    color:#555555;
 
 }
 
-.section-title{
+.hero-buttons{
 
-    margin-bottom:20px;
-
-    color:#1e40af;
-
-    font-size:32px;
+    margin-top:35px;
 
 }
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    margin:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    transition:
+    background-color .3s,
+    transform .3s,
+    box-shadow .3s;
+
+}
+
+.btn:hover{
+
+    background:#1e40af;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+
+}
+
+.btn-secondary{
+
+    background:#555555;
+
+}
+
+.btn-secondary:hover{
+
+    background:#333333;
+
+}
+
+/* ==========================================
+   COMMON SECTIONS
+========================================== */
 
 .why-section,
 .feature-section,
 .quote-section,
 .contact-section{
 
-    padding:60px 10%;
+    padding:70px 10%;
 
 }
+
+.section-title{
+
+    text-align:center;
+
+    color:#1e40af;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   WHY SECTION
+========================================== */
 
 .why-list{
 
-    margin-left:20px;
+    margin-left:25px;
+    line-height:2;
 
 }
 
-.why-list li{
-
-    margin-bottom:10px;
-
-}
+/* ==========================================
+   FEATURE GRID
+========================================== */
 
 .features{
 
     display:grid;
-    
+
     grid-template-columns:repeat(3,1fr);
-    
-    gap:25px;
-    
-    /* margin-top:30px; */
-    
+
+    gap:30px;
+
 }
 
 .feature-card{
-    
+
     background:white;
-    border: 1px solid #dddddd;
-    border-radius: 12px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow:0 5px 12px rgba(0,0,0,0.12);
-    transition:0.3s;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.12);
+
+    transition:
+    transform .3s,
+    box-shadow .3s;
+
+    cursor:pointer;
 
 }
 
 .feature-card:hover{
 
-    transform:translateY(-8px);
+    transform:
+    translateY(-8px)
+    scale(1.02);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.18);
 
 }
 
@@ -164,21 +260,53 @@ body{
 
     margin-bottom:15px;
 
+    font-size:24px;
+
 }
 
-.quote section{
+.feature-card p{
+
+    color:#555555;
+
+}
+
+/* ==========================================
+   QUOTE
+========================================== */
+
+.quote-section{
+
     text-align:center;
+
 }
 
 blockquote{
 
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:24px;
+
     font-style:italic;
 
-    font-size:22px;
+    color:#444444;
+
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact-section{
 
     text-align:center;
 
 }
+
+/* ==========================================
+   FOOTER
+========================================== */
 
 .footer{
 
@@ -188,60 +316,39 @@ blockquote{
 
     text-align:center;
 
-    padding:30px;
+    padding:40px 20px;
 
 }
 
 .footer p{
 
-    margin:8px 0;
+    margin:10px 0;
 
 }
 
-
-
-/* =====================================
-   Tablet
-===================================== */
+/* ==========================================
+   TABLET
+========================================== */
 
 @media(max-width:1024px){
 
     .features{
 
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:repeat(2,1fr);
 
     }
 
 }
 
-/* =====================================
-   Mobile
-===================================== */
+/* ==========================================
+   MOBILE
+========================================== */
 
 @media(max-width:768px){
-
-    .hero{
-
-        padding:50px 20px;
-
-    }
-
-    .hero-title{
-
-        font-size:32px;
-
-    }
-
-    .hero-description{
-
-        font-size:16px;
-
-    }
 
     .navbar{
 
         gap:12px;
-
         padding:12px;
 
     }
@@ -252,9 +359,43 @@ blockquote{
 
     }
 
+    .hero{
+
+        padding:60px 20px;
+
+    }
+
+    .hero-title{
+
+        font-size:34px;
+
+    }
+
+    .hero-description{
+
+        font-size:16px;
+
+    }
+
+    .btn{
+
+        display:block;
+
+        width:220px;
+
+        margin:15px auto;
+
+    }
+
     .features{
 
         grid-template-columns:1fr;
+
+    }
+
+    .section-title{
+
+        font-size:28px;
 
     }
 
